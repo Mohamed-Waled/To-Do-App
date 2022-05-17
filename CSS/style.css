@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 420px;
+  background-position: 0% 101%;
+  font-family: "Fredoka", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 93vh;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 420px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.navBar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar a h1 {
+  color: #00bcd4;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.navBar h1:hover {
+  font-size: 45px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 40%;
+  height: 85px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form .input {
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.form form .add {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px 15px;
+  background-color: #00bcd4;
+  color: hsl(229, 57%, 11%);
+  font-size: 16px;
+  margin-left: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tasks {
+  width: 40%;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks .empty {
+  width: 90%;
+  height: 45px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+.tasks .task {
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tasks .task:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.tasks .task .remove {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  background-color: #00bcd4;
+  color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove:hover,
+.add:hover,
+.btn:hover {
+  opacity: 0.7;
+}
+
+.done {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px 15px;
+  background-color: #00bcd4;
+  color: hsl(229, 57%, 11%);
+  font-size: 16px;
+  margin-left: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00bcd4;
+}
+
+.footer a {
+  text-decoration: none;
+  color: unset;
+}
+
+@media (max-width: 1025px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-position: 0% 101%;
+  }
+
+  .container {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .body {
+    flex-direction: row;
+  }
+
+  .form {
+    width: 45%;
+  }
+
+  .form form .input {
+    width: 60%;
+  }
+
+  .form form .add {
+    margin-left: 20px;
+  }
+
+  .tasks {
+    width: 45%;
+  }
+
+  .tasks .task {
+    cursor: pointer;
+  }
+
+  .task:hover {
+    opacity: unset;
+  }
+}
+
+@media (max-width: 769px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-position: 0% 101%;
+  }
+
+  .container {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  .form form .input {
+    width: 68%;
+  }
+
+  .form form .add {
+    margin-left: 20px;
+  }
+
+  .tasks {
+    width: 95%;
+  }
+
+  .tasks .task {
+    cursor: pointer;
+  }
+
+  .task:hover {
+    opacity: unset;
+  }
+}
+
+@media (max-width: 426px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-size: 425px 800px;
+    background-position: unset;
+  }
+
+  .container {
+    background-image: unset;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  .form form .input {
+    width: 60%;
+  }
+
+  .form form .add {
+    margin-left: 20px;
+  }
+
+  .tasks {
+    width: 95%;
+  }
+
+  .tasks .task {
+    cursor: pointer;
+  }
+
+  .task:hover {
+    opacity: unset;
+  }
+}
+
+@media (max-width: 376px) {
+  .form {
+    width: 95%;
+  }
+
+  .form form .input {
+    width: 58%;
+  }
+
+  .form form .add {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 321px) {
+  .form {
+    width: 100%;
+  }
+
+  .form form .input {
+    width: 50%;
+  }
+
+  .form form .add {
+    padding: 10px 10px;
+  }
+
+  .tasks {
+    width: 100%;
+  }
+}
