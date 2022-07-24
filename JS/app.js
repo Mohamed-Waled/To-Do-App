@@ -32,10 +32,6 @@ if (localStorage.getItem("tasks")) {
 // Call Get Data From Local Storage Function
 getDataFromLocalStorage();
 
-input.addEventListener("", () => {
-  console.log("worked");
-});
-
 // Add Task
 button.addEventListener("click", () => {
   if (input.value !== "") {
