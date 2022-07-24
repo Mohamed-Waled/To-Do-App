@@ -17,7 +17,7 @@ This is a To-Do App With Local Storage That Can Save Your Tasks in it Till You D
 ### Screenshot
 
 ![](images/Desktop.png)
-![](images/Mobile.png
+![](images/Mobile.png)
 
 ### Links
 
