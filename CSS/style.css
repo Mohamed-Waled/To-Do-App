@@ -186,7 +186,7 @@ form {
 
 @media (max-width: 1025px) {
   body {
-    background-image: url(..iImages/bg-desktop.png);
+    background-image: url(../images/bg-desktop.png);
     background-position: 0% 101%;
   }
 
@@ -251,6 +251,7 @@ form {
 
   .tasks {
     width: 95%;
+    max-height: 200px;
   }
 
   .tasks .task {
@@ -291,6 +292,7 @@ form {
 
   .tasks {
     width: 95%;
+    max-height: 150px;
   }
 
   .tasks .task {
